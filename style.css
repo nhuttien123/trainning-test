@@ -1,7 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 *{
     margin: 0;
     padding: 0;
     list-style: none;
-
+    font-family: 'Roboto', sans-serif;
 }
+
+.banner{
+    width: 100%;
+    position: relative;
+}
+
+.banner-items {
+    position: relative;
+    width: 100%;
+}
+
+.banner-images img{
+    width: 100%;
+}
+
+.banner-images img:active {
+    cursor: grab;   
+}
+
+.banner-items .slick-prev{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.493);
+    color: white;
+    content: unset;
+    font-size: 30px;
+    padding: 20px 20px ;  
+    border: unset;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.banner-items .slick-next{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.493);
+    color: white;
+    font-size: 30px;
+    padding: 20px 20px ;  
+    border: unset;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+}
+
+.banner-items .slick-dots{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 83%;
+    width: 0px;
+    gap: 0 15px;
+}
+
+.banner-items .slick-dots  button{
+    font-size: 0;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: black;
+}
+
+.banner-items .slick-active button{
+    background-color: #fff;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.banner-nav{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: row; 
+    width: 1170px;
+    top: 0;
+    align-items: center;
+    padding: 20px 0 0;
+}
+
+.banner-nav .nav-image{
+    width: 25%;
+}
+
+.nav-image img{
+    width: 100%;
+}
+ 
+.banner-nav .nav-items{
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+   
+}
+.nav-items  li{
+    margin-left: 1.2rem;
+}
+
+.nav-items li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav-items li a:hover{
+    color: rgb(250, 84, 48);
+}
+
+@media only screen and (max-width: 1440px) {
+    .banner-nav{
+        width: 975px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .banner-nav{
+       display: none;
+    }
+}
+
+
 
