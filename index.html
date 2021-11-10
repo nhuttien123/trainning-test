@@ -22,7 +22,8 @@
   <body>
     <header>
       <div class="banner">
-        <div class="banner-nav">
+        <div class="banner__nav banner__toggle">
+          <i class="fas fa-bars toggle-icon" id="toggle" tabindex="1"></i>
           <a href="" class="nav-image"
             ><img
               class=""
@@ -30,16 +31,10 @@
               alt=""
           /></a>
 
-          <ul class="nav-items">
+          <ul class="nav-items" id="toggle-menu">
+            <li>Menu <span class="close-toggle" id="close-toggle">+</span></li>
             <li class="custom-nav-item">
-              <a
-                href=""
-                style="
-                  color: rgb(250, 84, 48);
-                  border-bottom: 2px solid rgb(250, 84, 48);
-                "
-                >Trang chủ</a
-              >
+              <a href="">Trang chủ</a>
             </li>
             <li>
               <a href="">Giới thiệu</a>
@@ -57,28 +52,43 @@
               <a href="">Tin tức</a>
             </li>
             <li>
-              <a
-                href=""
-                style="
-                  color: rgb(250, 84, 48);
-                  border-bottom: 2px solid rgb(250, 84, 48);
-                "
-                >Phong thủy xe</a
-              >
+              <a href="">Phong thủy xe</a>
             </li>
             <li>
               <a href="">Liên hệ</a>
             </li>
           </ul>
         </div>
-      </div>
 
-      <div class="banner-items">
-        <div class="banner-images">
-          <img src="https://kayauto.vn/uploads/banner-home.jpg" alt="" />
+        <div class="banner__items">
+          <div class="banner-images">
+            <img src="https://kayauto.vn/uploads/banner-home.jpg" alt="" />
+          </div>
+          <div class="banner-images">
+            <img src="https://kayauto.vn/uploads/banner-home.jpg" alt="" />
+          </div>
         </div>
-        <div class="banner-images">
-          <img src="https://kayauto.vn/uploads/banner-home.jpg" alt="" />
+
+        <div class="container-md">
+          <div class="banner__select-form">
+            <form action="">
+              <div class="box-select">
+                <label for=""><b>Tìm loại xe</b></label>
+                <select name="" id="">
+                  <option value="">Tìm kiếm theo loại xe</option>
+                </select>
+              </div>
+              <div class="box-select">
+                <label for=""><b>Tìm dòng xe</b></label>
+                <select name="" id="">
+                  <option value="">Tìm kiếm theo dòng xe</option>
+                </select>
+              </div>
+              <div class="box-select">
+                <button>Tìm kiếm</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </header>
