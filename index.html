@@ -16,13 +16,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./Custom/style.css" />
     <title>Document</title>
   </head>
   <body>
+
     <header>
       <div class="banner">
-        <div class="banner__nav banner__toggle">
+        <div class="banner__nav ">
           <i class="fas fa-bars toggle-icon" id="toggle" tabindex="1"></i>
           <a href="" class="nav-image"
             ><img
@@ -30,11 +31,10 @@
               src="https://kayauto.vn/uploads/logo-white.png"
               alt=""
           /></a>
-
           <ul class="nav-items" id="toggle-menu">
             <li>Menu <span class="close-toggle" id="close-toggle">+</span></li>
-            <li class="custom-nav-item">
-              <a href="">Trang chủ</a>
+            <li >
+              <a href="" class="custom-text-orange active">Trang chủ</a>
             </li>
             <li>
               <a href="">Giới thiệu</a>
@@ -52,14 +52,17 @@
               <a href="">Tin tức</a>
             </li>
             <li>
-              <a href="">Phong thủy xe</a>
+              <a href="" class="custom-text-orange active">Phong thủy xe</a>
             </li>
             <li>
               <a href="">Liên hệ</a>
             </li>
           </ul>
         </div>
-
+      </header>
+    
+    <main>
+      <div class="banner">
         <div class="banner__items">
           <div class="banner-images">
             <img src="https://kayauto.vn/uploads/banner-home.jpg" alt="" />
@@ -68,9 +71,9 @@
             <img src="https://kayauto.vn/uploads/banner-home.jpg" alt="" />
           </div>
         </div>
-
-        <div class="container-md">
+       
           <div class="banner__select-form">
+            <div class="t-container-md">
             <form action="">
               <div class="box-select">
                 <label for=""><b>Tìm loại xe</b></label>
@@ -91,7 +94,99 @@
           </div>
         </div>
       </div>
-    </header>
+      <div class="t-container">
+          <div class="content">
+            <div class="content__text">
+              <p><span class="custom-text-orange">MUA BÁN TRAO ĐỔI</span> XE LƯỚT UY TÍN</p>
+            </div>
+            <div class="content__box">
+              <div class="buy title">
+                <b>Bạn muốn <span class="custom-text-white upper-case">mua xe</span></b>
+                <p>Kay Auto sẽ nhanh chóng tìm Ngay và Đúng dòng xe mà bạn yêu thích.</p>
+                <a href="">Xem chi tiết</a>
+                <div class="box-img">
+                  <img src="./assets/images/red-car.png" alt="">
+                </div>
+                
+              </div>
+            </div>
+            <div class="content__box">
+              <div class="sell title">
+                <b><span class="custom-text-white">Bạn muốn</span>  <span class="custom-text-orange upper-case">bán xe</span></b>
+                <p>Kay Auto sẽ nhanh chóng tìm Ngay và Đúng dòng xe mà bạn yêu thích.</p>
+                <a href="">Xem chi tiết</a>
+                <div class="box-img">
+                  <img src="./assets/images/blue-car.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <h1>CÁC DÒNG XE TIÊU BIỂU</h1>
+            <div class="product__list">
+              <div class="product-item">
+                <img src="./assets/images/product.jpg" alt="">
+                <div class="body">
+                  <b>Chevrolet Trailblazer 2018 Tự động máy dầu</b>
+                  <p><b class="custom-text-orange">Giảm còn 660 triệu</b> | <small>Trả trước: 264 Triệu</small></p>
+                  <hr>
+                  <div class="property">
+                    <p><img src="./assets/images/calendar.png" alt="">2018</p>
+                    <p><img src="./assets/images/speed.png" alt="">5000</p>
+                    <p><img src="./assets/images/level.png" alt="">Tự động</p>
+                    <p><img src="./assets/images/map-pin.png" alt="">TPHCM</p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./assets/images/product.jpg" alt="">
+                <div class="body">
+                  <b>Chevrolet Trailblazer 2018 Tự động máy dầu</b>
+                  <p><b class="custom-text-orange">Giảm còn 660 triệu</b> | <small>Trả trước: 264 Triệu</small></p>
+                  <hr>
+                  <div class="property">
+                    <p><img src="./assets/images/calendar.png" alt="">2018</p>
+                    <p><img src="./assets/images/speed.png" alt="">5000</p>
+                    <p><img src="./assets/images/level.png" alt="">Tự động</p>
+                    <p><img src="./assets/images/map-pin.png" alt="">TPHCM</p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./assets/images/product.jpg" alt="">
+                <div class="body">
+                  <b>Chevrolet Trailblazer 2018 Tự động máy dầu</b>
+                  <p><b class="custom-text-orange">Giảm còn 660 triệu</b> | <small>Trả trước: 264 Triệu</small></p>
+                  <hr>
+                  <div class="property">
+                    <p><img src="./assets/images/calendar.png" alt="">2018</p>
+                    <p><img src="./assets/images/speed.png" alt="">5000</p>
+                    <p><img src="./assets/images/level.png" alt="">Tự động</p>
+                    <p><img src="./assets/images/map-pin.png" alt="">TPHCM</p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./assets/images/product.jpg" alt="">
+                <div class="body">
+                  <b>Chevrolet Trailblazer 2018 </b>
+                  <p><b class="custom-text-orange">Giảm còn 660 triệu</b> | <small>Trả trước: 264 Triệu</small></p>
+                  <hr>
+                  <div class="property">
+                    <p><img src="./assets/images/calendar.png" alt="">2018</p>
+                    <p><img src="./assets/images/speed.png" alt="">5000</p>
+                    <p><img src="./assets/images/level.png" alt="">Tự động</p>
+                    <p><img src="./assets/images/map-pin.png" alt="">TPHCM</p>
+                  </div>
+                </div>
+              </div>
+             
+             
+            </div>
+          </div>
+      </div>
+    </main>
   </body>
   <script
     type="text/javascript"
