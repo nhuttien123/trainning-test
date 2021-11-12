@@ -1,0 +1,40 @@
+$mobile-xs: 425px;
+$mobile-s: 480px;
+$mobile-m: 575px;
+$mobile-l: 767px;
+$tablet: 991px;
+$laptop: 1200px;
+$laptop-l: 1500px;
+
+// media queries
+@mixin Responsive($canvas) {
+  @if $canvas == X32 {
+    @media only screen and (max-width: $mobile-xs) {
+      @content;
+    }
+  } @else if $canvas == X48 {
+    @media only screen and (max-width: $mobile-s) {
+      @content;
+    }
+  } @else if $canvas == XS {
+    @media only screen and (max-width: $mobile-m) {
+      @content;
+    }
+  } @else if $canvas == SM {
+    @media only screen and (max-width: $mobile-l) {
+      @content;
+    }
+  } @else if $canvas == MD {
+    @media only screen and (max-width: $tablet) {
+      @content;
+    }
+  } @else if $canvas == LG {
+    @media only screen and (max-width: $laptop) {
+      @content;
+    }
+  } @else if $canvas == XL {
+    @media only screen and (max-width: $laptop-l) {
+      @content;
+    }
+  }
+}
