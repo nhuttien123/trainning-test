@@ -1130,7 +1130,7 @@
 }
 
 .section-gallery .gallery-item p {
-  padding: 50px;
+  padding: 60px 30px;
   position: absolute;
   bottom: 0;
   color: #fff;
@@ -1138,27 +1138,33 @@
   font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 1200px) {
+  .section-gallery .gallery-item p {
+    padding: 10px 25px;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .section-gallery .gallery-item p {
-    padding: 60px 25px;
+    padding: 15px 25px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .section-gallery .gallery-item p {
-    padding: 60px 80px;
+    padding: 15px 70px;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .section-gallery .gallery-item p {
-    padding: 60px 60px;
+    padding: 15px 60px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .section-gallery .gallery-item p {
-    padding: 60px 30px;
+    padding: 15px 30px;
   }
 }
 
@@ -1169,6 +1175,14 @@
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
   height: 480px;
+}
+
+.section-gallery .slick-center p {
+  padding: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 .section-gallery .slick-prev {
