@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $(".banner-items").slick({
     prevArrow:
-      "<button type='button' class='slick-button slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+      "<button type='button' class='slick-button slick-prev pull-left'><img src='./images/left.png' alt=''></button>",
     nextArrow:
-      "<button type='button' class='slick-button slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+      "<button type='button' class='slick-button slick-next pull-right'><img src='./images/right.png' alt=''></button>",
     dots: true,
     responsive: [
       {
@@ -11,14 +11,12 @@ $(document).ready(function () {
       },
     ],
   });
-});
 
-$(document).ready(function () {
   $(".section-service-slide").slick({
     prevArrow:
-      "<button type='button' class='slick-button slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+      "<button type='button' class='slick-button slick-prev pull-left'><img src='./images/left.png' alt=''></button>",
     nextArrow:
-      "<button type='button' class='slick-button slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+      "<button type='button' class='slick-button slick-next pull-right'><img src='./images/right.png' alt=''></button>",
     dots: false,
     responsive: [
       {
@@ -29,14 +27,12 @@ $(document).ready(function () {
       },
     ],
   });
-});
 
-$(document).ready(function () {
   $(".gallery-slide").slick({
     prevArrow:
-      "<button type='button' class='slick-button slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+      "<button type='button' class='slick-button slick-prev pull-left'><img src='./images/left.png' alt=''></button>",
     nextArrow:
-      "<button type='button' class='slick-button slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+      "<button type='button' class='slick-button slick-next pull-right'><img src='./images/right.png' alt=''></button>",
     dots: false,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -71,27 +67,27 @@ $(document).ready(function () {
       },
     ],
   });
-});
 
-const openToggle = document.getElementById("toggle");
-let isShow = false;
+  const openToggle = document.getElementById("toggle");
+  let isShow = false;
 
-openToggle.addEventListener("click", () => {
-  isShow = true;
-  if (isShow == true) {
-    document.getElementById("toggle-menu").style.left = "0";
-  } else {
-    document.getElementById("toggle-menu").style.left = "-100%";
-  }
-});
+  openToggle.addEventListener("click", () => {
+    isShow = true;
+    if (isShow == true) {
+      document.getElementById("toggle-menu").style.left = "0";
+    } else {
+      document.getElementById("toggle-menu").style.left = "-100%";
+    }
+  });
 
-const closeToggle = document.getElementById("close-toggle");
+  const closeToggle = document.getElementById("close-toggle");
 
-closeToggle.addEventListener("click", () => {
-  isShow = false;
-  if (isShow == true) {
-    document.getElementById("toggle-menu").style.left = "0";
-  } else {
-    document.getElementById("toggle-menu").style.left = "-100%";
-  }
+  closeToggle.addEventListener("click", () => {
+    isShow = false;
+    if (isShow == true) {
+      document.getElementById("toggle-menu").style.left = "0";
+    } else {
+      document.getElementById("toggle-menu").style.left = "-100%";
+    }
+  });
 });

@@ -4,20 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./libs/slick.css" />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="./libs/slick.css"
+      href="./font/fontawesome-free-5.15.4-web/css/all.css"
     />
-   <link rel="stylesheet" href="./font/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="./font/style.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./font/style.css">
     <title>Document</title>
   </head>
   <body>
     <header>
       <div class="banner">
-        <div class="banner-nav ">
+        <div class="banner-nav">
           <i class="fas fa-bars toggle-icon" id="toggle" tabindex="1"></i>
           <a href="" class="nav-image"
             ><img
@@ -28,10 +27,13 @@
           <ul class="nav-items" id="toggle-menu">
             <li>Menu <span class="close-toggle" id="close-toggle">+</span></li>
             <li>
-              <a href="" class="custom-text-orange" style="color: #ff6f24;">Trang chủ <p class="active"></p></a>
+              <a href="" class="custom-text-orange" style="color: #ff6f24"
+                >Trang chủ
+                <p class="active"></p
+              ></a>
             </li>
             <li>
-              <a href="">Giới thiệu</a>
+              <a href="about.html">Giới thiệu</a>
             </li>
             <li>
               <a href="">Sản phẩm</a>
@@ -46,15 +48,21 @@
               <a href="">Tin tức</a>
             </li>
             <li>
-              <a href="" class="custom-text-orange active" style="color: #ff6f24;">Phong thủy xe <p class="active"></p></a>
+              <a
+                href=""
+                class="custom-text-orange active"
+                style="color: #ff6f24"
+                >Phong thủy xe
+                <p class="active"></p>
+              </a>
             </li>
             <li>
               <a href="">Liên hệ</a>
             </li>
           </ul>
         </div>
-      </header>
-    
+      </div>
+    </header>
     <main>
       <div class="banner">
         <div class="banner-items">
@@ -65,14 +73,21 @@
             <img src="https://kayauto.vn/uploads/banner-home.jpg" alt="" />
           </div>
         </div>
-       
-          <div class="banner-select-form">
-            <div class="t-container-md">
+        <div class="banner-select-form">
+          <div class="t-container-md">
             <form action="">
               <div class="box-select">
                 <label for=""><b>Tìm loại xe</b></label>
                 <select name="" id="">
                   <option value="">Tìm kiếm theo loại xe</option>
+                  <option value="">Toyota</option>
+                  <option value="">Kia</option>
+                  <option value="">Ford</option>
+                  <option value="">Huynhdai</option>
+                  <option value="">Mazda</option>
+                  <option value="">Nissan</option>
+                  <option value="">Mitsubishi</option>
+                  <option value="">Chevrolet</option>
                 </select>
               </div>
               <div class="box-select">
@@ -89,199 +104,424 @@
         </div>
       </div>
       <div class="t-container">
-          <div class="section-content">
-            <div class="section-content-text">
-              <p><span class="custom-text-orange">MUA BÁN TRAO ĐỔI</span> XE LƯỚT UY TÍN</p>
-            </div>
-            <div class="section-content-box">
-              <div class="buy title">
-                <b>Bạn muốn <span class="custom-text-white upper-case">mua xe</span></b>
-                <p>Kay Auto sẽ nhanh chóng tìm Ngay và Đúng dòng xe mà bạn yêu thích.</p>
-                <a href="">Xem chi tiết</a>
-                <div class="box-img">
-                  <img src="./images/red-car.png" alt="">
-                </div>
-                
-              </div>
-            </div>
-            <div class="section-content-box">
-              <div class="sell title">
-                <b><span class="custom-text-white">Bạn muốn</span>  <span class="custom-text-orange upper-case">bán xe</span></b>
-                <p>Kay Auto sẽ nhanh chóng tìm Ngay và Đúng dòng xe mà bạn yêu thích.</p>
-                <a href="">Xem chi tiết</a>
-                <div class="box-img">
-                  <img src="./images/blue-car.png" alt="">
-                </div>
+        <div class="section-content">
+          <div class="section-content-text">
+            <p>
+              <span class="custom-text-orange">MUA BÁN TRAO ĐỔI</span> XE LƯỚT
+              UY TÍN
+            </p>
+          </div>
+          <div class="section-content-box">
+            <div class="buy title">
+              <b
+                >Bạn muốn
+                <span class="custom-text-white upper-case">mua xe</span></b
+              >
+              <p>
+                Kay Auto sẽ nhanh chóng tìm Ngay và Đúng dòng xe mà bạn yêu
+                thích.
+              </p>
+              <a href="">Xem chi tiết</a>
+              <div class="box-img">
+                <img src="./images/red-car.png" alt="" />
               </div>
             </div>
           </div>
-
-          <div class="section-product">
-            <p class="section-title">CÁC DÒNG XE TIÊU BIỂU</p>
-            <div class="section-product-list padding-section">
-              <div class="product-item">
-                <img src="./images/product.jpg" alt="">
-                <div class="body">
-                  <b>Chevrolet Trailblazer 2018 Tự động máy dầu</b>
-                  <p><b class="custom-text-orange">Giảm còn 660 triệu</b> | <small>Trả trước: 264 Triệu</small></p>
-                  <div class='space'></div>
-                  <div class="property">
-                    <div class="property-item"><img src="./images/calendar.png" alt="">2018</div>
-                    <div  class="property-item"><img src="./images/speed.png" alt="">5000</div>
-                    <div  class="property-item"><img src="./images/level.png" alt="">Tự động</div>
-                    <div  class="property-item"><img src="./images/map-pin.png" alt="">TPHCM</div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-item">
-                <img src="./images/product.jpg" alt="">
-                <div class="body">
-                  <b>Chevrolet Trailblazer 2018 Tự động máy dầu</b>
-                  <p><b class="custom-text-orange">Giảm còn 660 triệu</b> | <small>Trả trước: 264 Triệu</small></p>
-                  <div class='space'></div>
-                  <div class="property">
-                    <div class="property-item"><img src="./images/calendar.png" alt="">2018</div>
-                    <div  class="property-item"><img src="./images/speed.png" alt="">5000</div>
-                    <div  class="property-item"><img src="./images/level.png" alt="">Tự động</div>
-                    <div  class="property-item"><img src="./images/map-pin.png" alt="">TPHCM</div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-item">
-                <img src="./images/product.jpg" alt="">
-                <div class="body">
-                  <b>Chevrolet Trailblazer 2018 Tự động máy dầu</b>
-                  <p><b class="custom-text-orange">Giảm còn 660 triệu</b> | <small>Trả trước: 264 Triệu</small></p>
-                  <div class='space'></div>
-                  <div class="property">
-                    <div class="property-item"><img src="./images/calendar.png" alt="">2018</div>
-                    <div  class="property-item"><img src="./images/speed.png" alt="">5000</div>
-                    <div  class="property-item"><img src="./images/level.png" alt="">Tự động</div>
-                    <div  class="property-item"><img src="./images/map-pin.png" alt="">TPHCM</div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-item">
-                <img src="./images/product.jpg" alt="">
-                <div class="body">
-                  <b>Chevrolet Trailblazer 2018 Tự động máy dầu</b>
-                  <p><b class="custom-text-orange">Giảm còn 660 triệu</b> | <small>Trả trước: 264 Triệu</small></p>
-                  <div class='space'></div>
-                  <div class="property">
-                    <div class="property-item"><img src="./images/calendar.png" alt="">2018</div>
-                    <div  class="property-item"><img src="./images/speed.png" alt="">5000</div>
-                    <div  class="property-item"><img src="./images/level.png" alt="">Tự động</div>
-                    <div  class="property-item"><img src="./images/map-pin.png" alt="">TPHCM</div>
-                  </div>
-                </div>
+          <div class="section-content-box">
+            <div class="sell title">
+              <b
+                ><span class="custom-text-white">Bạn muốn</span>
+                <span class="custom-text-orange upper-case">bán xe</span></b
+              >
+              <p>
+                Kay Auto sẽ nhanh chóng tìm Ngay và Đúng dòng xe mà bạn yêu
+                thích.
+              </p>
+              <a href="">Xem chi tiết</a>
+              <div class="box-img">
+                <img src="./images/blue-car.png" alt="" />
               </div>
             </div>
-            <div class="padding-section">
-              <button type="button" >Xem thêm xe</button>
-            </div>
-          </div>
-
-          <div class="section-service">
-            <p class="section-title">Các loại hình dịch vụ</p>
-            <div class="section-service-slide padding-section">
-              <div class="slide-contain">
-            <div class="section-service-box">
-                <div class="service-about">
-                  <span>Dịch Vụ Sửa Chữa – Bảo Dưỡng – Chăm Sóc  Ô Tô</span>
-                  <p>KayAuto chính thức khai trương xưởng dịch vụ chăm sóc bảo hành - bảo dưỡng ô tô tại địa chỉ 718/1 Ql13 Hiệp Bình Phước Thủ Đức Tp.HCM . Với quy mô lớn và đầy đủ các trang thiết bị chuyên dụng, ô tô của bạn sẽ được chăm sóc một cách tốt nhất khi đến với Garage của KayAuto.</p>
-                  <a href="" class="">Xem chi tiết <p class="active"></p></a>
-                </div>
-                <div class="service-image">
-                  <img src="./images/ser4.png" alt="">
-                </div>
-            </div>
-          </div>
-          <div class="slide-contain">
-            <div class="section-service-box">
-                <div class="service-about">
-                  <span>Dịch vụ cứu hộ ô tô 24/7 tại Tp.HCM nhanh chóng, chuyên nghiệp</span>
-                  <p>Dịch vụ cứu hộ ô tô 24/7 tại Tp.HCM nhanh chóng, chuyên nghiệp của Garage sửa chữa ô tô. Ô tô là phương tiện đi lại và hoạt động ngày càng phổ biến ở Việt Nam. Trong quá trình sử dụng, xe sẽ không thể tránh khỏi những hỏng hóc và sự cố xảy ra</p>
-                  <a href="" class="active">Xem chi tiết <p class=""></p></a>
-                </div>
-                <div class="service-image">
-                  <img src="./images/ser1.jpeg" alt="">
-                </div>
-            </div>
-          </div>
           </div>
         </div>
-      </div> 
-
-      <div class="section-news">
-        <div class="t-container">
-          <div class="padding-content">
-          <p class="section-title">Tin tức nổi bật</p>
-          <div class="padding-section news-box">
-              <div class="news-item">
-                  <img src="./images/blog-4.png" alt="">
-                <div class="news-info">
-                  <p class="custom-text-orange">Kinh ngiệm</p>
-                  <a href="">
-                    9 kinh nghiệm (cần có) để biết cách mua xe ô tô cũ cực hiệu quả.
-                  </a>
+        <div class="section-product">
+          <p class="section-title">CÁC DÒNG XE TIÊU BIỂU</p>
+          <div class="section-product-list padding-section">
+            <div class="product-item">
+              <img src="./images/product.jpg" alt="" />
+              <div class="body">
+                <b>Chevrolet Trailblazer 2018 Tự động máy dầu</b>
+                <p>
+                  <b class="custom-text-orange">Giảm còn 660 triệu</b> |
+                  <small>Trả trước: 264 Triệu</small>
+                </p>
+                <div class="space"></div>
+                <div class="property">
+                  <div class="property-item">
+                    <img src="./images/calendar.png" alt="" />2018
+                  </div>
+                  <div class="property-item">
+                    <img src="./images/speed.png" alt="" />5000
+                  </div>
+                  <div class="property-item">
+                    <img src="./images/level.png" alt="" />Tự động
+                  </div>
+                  <div class="property-item">
+                    <img src="./images/map-pin.png" alt="" />TPHCM
+                  </div>
                 </div>
               </div>
-              <div class="news-item">
-                <img src="./images/blog-3.png" alt="">
-              <div class="news-info">
-                <p class="custom-text-orange">Kinh ngiệm</p>
-                <a href="">
-                  9 kinh nghiệm (cần có) để biết cách mua xe ô tô cũ cực hiệu quả.
-                </a>
+            </div>
+            <div class="product-item">
+              <img src="./images/product2.jpg" alt="" />
+              <div class="body">
+                <b>Chevrolet Trailblazer 2018 Tự động máy dầu</b>
+                <p>
+                  <b class="custom-text-orange">Giảm còn 660 triệu</b> |
+                  <small>Trả trước: 264 Triệu</small>
+                </p>
+                <div class="space"></div>
+                <div class="property">
+                  <div class="property-item">
+                    <img src="./images/calendar.png" alt="" />2018
+                  </div>
+                  <div class="property-item">
+                    <img src="./images/speed.png" alt="" />5000
+                  </div>
+                  <div class="property-item">
+                    <img src="./images/level.png" alt="" />Tự động
+                  </div>
+                  <div class="property-item">
+                    <img src="./images/map-pin.png" alt="" />TPHCM
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="news-item"> 
-              <img src="./images/blog2.jpg" alt="">
-            <div class="news-info">
-              <p class="custom-text-orange">Kinh ngiệm</p>
-              <a href="">
-                9 kinh nghiệm (cần có) để biết cách mua xe ô tô cũ cực hiệu quả.
-              </a>
+            <div class="product-item">
+              <img src="./images/product3.jpg" alt="" />
+              <div class="body">
+                <b>Chevrolet Trailblazer 2018 Tự động máy dầu</b>
+                <p>
+                  <b class="custom-text-orange">Giảm còn 660 triệu</b> |
+                  <small>Trả trước: 264 Triệu</small>
+                </p>
+                <div class="space"></div>
+                <div class="property">
+                  <div class="property-item">
+                    <img src="./images/calendar.png" alt="" />2018
+                  </div>
+                  <div class="property-item">
+                    <img src="./images/speed.png" alt="" />5000
+                  </div>
+                  <div class="property-item">
+                    <img src="./images/level.png" alt="" />Tự động
+                  </div>
+                  <div class="property-item">
+                    <img src="./images/map-pin.png" alt="" />TPHCM
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <img src="./images/product4.jpg" alt="" />
+              <div class="body">
+                <b>Chevrolet Trailblazer 2018 Tự động máy dầu</b>
+                <p>
+                  <b class="custom-text-orange">Giảm còn 660 triệu</b> |
+                  <small>Trả trước: 264 Triệu</small>
+                </p>
+                <div class="space"></div>
+                <div class="property">
+                  <div class="property-item">
+                    <img src="./images/calendar.png" alt="" />2018
+                  </div>
+                  <div class="property-item">
+                    <img src="./images/speed.png" alt="" />5000
+                  </div>
+                  <div class="property-item">
+                    <img src="./images/level.png" alt="" />Tự động
+                  </div>
+                  <div class="property-item">
+                    <img src="./images/map-pin.png" alt="" />TPHCM
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="padding-section">
+            <button type="button">Xem thêm xe</button>
+          </div>
+        </div>
+        <div class="section-service">
+          <p class="section-title">Các loại hình dịch vụ</p>
+          <div class="section-service-slide padding-section">
+            <div class="slide-contain">
+              <div class="section-service-box">
+                <div class="service-about">
+                  <span>Dịch Vụ Sửa Chữa – Bảo Dưỡng – Chăm Sóc Ô Tô</span>
+                  <p>
+                    KayAuto chính thức khai trương xưởng dịch vụ chăm sóc bảo
+                    hành - bảo dưỡng ô tô tại địa chỉ 718/1 Ql13 Hiệp Bình Phước
+                    Thủ Đức Tp.HCM . Với quy mô lớn và đầy đủ các trang thiết bị
+                    chuyên dụng, ô tô của bạn sẽ được chăm sóc một cách tốt nhất
+                    khi đến với Garage của KayAuto.
+                  </p>
+                  <a href="" class=""
+                    >Xem chi tiết
+                    <p class="active"></p
+                  ></a>
+                </div>
+                <div class="service-image">
+                  <img src="./images/ser4.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slide-contain">
+              <div class="section-service-box">
+                <div class="service-about">
+                  <span
+                    >Dịch vụ cứu hộ ô tô 24/7 tại Tp.HCM nhanh chóng, chuyên
+                    nghiệp</span
+                  >
+                  <p>
+                    Dịch vụ cứu hộ ô tô 24/7 tại Tp.HCM nhanh chóng, chuyên
+                    nghiệp của Garage sửa chữa ô tô. Ô tô là phương tiện đi lại
+                    và hoạt động ngày càng phổ biến ở Việt Nam. Trong quá trình
+                    sử dụng, xe sẽ không thể tránh khỏi những hỏng hóc và sự cố
+                    xảy ra
+                  </p>
+                  <a href="" class="active"
+                    >Xem chi tiết
+                    <p class=""></p
+                  ></a>
+                </div>
+                <div class="service-image">
+                  <img src="./images/ser1.jpeg" alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
+      <div class="section-news">
+        <div class="t-container">
+          <div class="padding-content">
+            <p class="section-title">Tin tức nổi bật</p>
+            <div class="padding-section news-box">
+              <div class="news-item">
+                <img src="./images/blog-4.png" alt="" />
+                <div class="news-info">
+                  <p class="custom-text-orange">Kinh ngiệm</p>
+                  <a href="">
+                    9 kinh nghiệm (cần có) để biết cách mua xe ô tô cũ cực hiệu
+                    quả.
+                  </a>
+                </div>
+              </div>
+              <div class="news-item">
+                <img src="./images/blog-3.png" alt="" />
+                <div class="news-info">
+                  <p class="custom-text-orange">Kinh ngiệm</p>
+                  <a href="">
+                    9 kinh nghiệm (cần có) để biết cách mua xe ô tô cũ cực hiệu
+                    quả.
+                  </a>
+                </div>
+              </div>
+              <div class="news-item">
+                <img src="./images/blog2.jpg" alt="" />
+                <div class="news-info">
+                  <p class="custom-text-orange">Kinh ngiệm</p>
+                  <a href="">
+                    9 kinh nghiệm (cần có) để biết cách mua xe ô tô cũ cực hiệu
+                    quả.
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="t-container">
         <div class="section-gallery padding-section">
           <p class="section-title">Thư viện ảnh</p>
-        
-            <div class="gallery-slide">
-              <div class="gallery-item">
-                <img src="./images/gallery1.png" alt="">
-                <p>Xưởng dịch vụ</p>
+          <div class="gallery-slide">
+            <div class="gallery-item">
+              <img src="./images/gallery1.png" alt="" />
+              <p>Xưởng dịch vụ</p>
+            </div>
+            <div class="gallery-item">
+              <img src="./images/gallery2.jpg" alt="" />
+              <p>Xưởng dịch vụ</p>
+            </div>
+            <div class="gallery-item">
+              <img src="./images/gallery3.jpg" alt="" />
+              <p>Xưởng dịch vụ</p>
+            </div>
+            <div class="gallery-item">
+              <img src="./images/gallery4.png" alt="" />
+              <p>Xưởng dịch vụ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="padding-section">
+      <div class="t-container">
+        <div class="footer-content">
+          <div class="content-item">
+            <a href=""><img src="./images/logo-white.png" alt="" /></a>
+            <div class="footer-contact">
+              <div class="contact-item">
+                <i class="custom-text-orange fas fa-map-marker-alt"></i>
+                <span class="custom-text-white"
+                  >555 Quốc lộ 13, P. Hiệp Bình Phước, Quận Thủ Đức, Tp. Hồ Chí
+                  Minh</span
+                >
               </div>
-              <div class="gallery-item">
-                <img src="./images/gallery2.jpg" alt="">
-                <p>Xưởng dịch vụ</p>
+              <div class="contact-item">
+                <i class="custom-text-orange fas fa-phone"></i
+                ><span class="custom-text-white">
+                  Hotline: 094 108 08 88 - 0986 34 77 74</span
+                >
               </div>
-              <div class="gallery-item">
-                <img src="./images/gallery3.jpg" alt="">
-                <p>Xưởng dịch vụ</p>
-              </div>
-              <div class="gallery-item">
-                <img src="./images/gallery4.png" alt="">
-                <p>Xưởng dịch vụ</p>
+              <div class="contact-item">
+                <i class="custom-text-orange color-main fas fa-envelope"></i
+                ><span class="custom-text-white">
+                  info@kayauto.vn - www.kayauto.vn</span
+                >
               </div>
             </div>
-         
+          </div>
+          <div class="content-item">
+            <p class="footer-title">Đường dẫn</p>
+            <div class="footer-link">
+              <div class="link-router">
+                <p><a href="" class="custom-text-white">Dịch vụ</a></p>
+                <p><a href="" class="custom-text-white">Phong thủy xe</a></p>
+                <p><a href="" class="custom-text-white">Sản phẩm</a></p>
+                <p><a href="" class="custom-text-white">Giới thiệu</a></p>
+              </div>
+              <div class="link-router">
+                <p><a href="" class="custom-text-white">So sánh xe</a></p>
+                <p><a href="" class="custom-text-white">Liên hệ</a></p>
+                <p><a href="" class="custom-text-white">Tin tức</a></p>
+                <p><a href="" class="custom-text-white">Thư viện ảnh</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="content-item">
+            <p class="footer-title">Tag</p>
+            <div class="tag">
+              <a href="" class="custom-text-white">Sự kiện</a>
+              <a href="" class="custom-text-white">Thủy kích</a>
+              <a href="" class="custom-text-white">Oto hết xăng</a>
+              <a href="" class="custom-text-white">Oto Việt xuất khẩu</a>
+              <a href="" class="custom-text-white">Xe bị thủy kích</a>
+              <a href="" class="custom-text-white">Mua xe cũ</a>
+              <a href="" class="custom-text-white">Đánh bật mùi hôi oto</a>
+              <a href="" class="custom-text-white">Trao đổi xe cũ</a>
+              <a href="" class="custom-text-white">Tiễn cũ đổi mới</a>
+            </div>
+          </div>
+          <div class="content-item">
+            <p class="footer-title">Xã hội</p>
+            <ul class="social">
+              <li>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-tiktok"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>  
-    </main>
+        <div class="car-content">
+          <div class="content-item car">
+            <p class="footer-title">Xe huyndai cũ</p>
+            <ul>
+              <li>
+                <a href="">Hyundai Accent Cũ</a>
+                <a href="">Hyundai Grand I10 Cũ</a>
+                <a href="">Hyundai Tucson Cũ</a>
+                <a href="">Hyundai Elantra Cũ</a>
+                <a href="">Hyundai Santa Fe Cũ</a>
+                <a href="">Hyundai Kona Cũ</a>
+                <a href="">Hyundai Grand I20 Cũ</a>
+                <a href="">Hyundai Grand I30 Cũ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="content-item car">
+            <p class="footer-title">XE KIA CŨ</p>
+            <ul>
+              <li>
+                <a href="">Hyundai Accent Cũ</a>
+                <a href="">Hyundai Grand I10 Cũ</a>
+                <a href="">Hyundai Tucson Cũ</a>
+                <a href="">Hyundai Elantra Cũ</a>
+                <a href="">Hyundai Santa Fe Cũ</a>
+                <a href="">Hyundai Kona Cũ</a>
+                <a href="">Hyundai Grand I20 Cũ</a>
+                <a href="">Hyundai Grand I30 Cũ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="content-item car">
+            <p class="footer-title">XE TOYOTA CŨ</p>
+            <ul>
+              <li>
+                <a href="">Hyundai Accent Cũ</a>
+                <a href="">Hyundai Grand I10 Cũ</a>
+                <a href="">Hyundai Tucson Cũ</a>
+                <a href="">Hyundai Elantra Cũ</a>
+                <a href="">Hyundai Santa Fe Cũ</a>
+                <a href="">Hyundai Kona Cũ</a>
+                <a href="">Hyundai Grand I20 Cũ</a>
+                <a href="">Hyundai Grand I30 Cũ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="content-item car">
+            <p class="footer-title">XE HONDA CŨ</p>
+            <ul>
+              <li>
+                <a href="">Hyundai Accent Cũ</a>
+                <a href="">Hyundai Grand I10 Cũ</a>
+                <a href="">Hyundai Tucson Cũ</a>
+                <a href="">Hyundai Elantra Cũ</a>
+                <a href="">Hyundai Santa Fe Cũ</a>
+                <a href="">Hyundai Kona Cũ</a>
+                <a href="">Hyundai Grand I20 Cũ</a>
+                <a href="">Hyundai Grand I30 Cũ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="content-item car">
+            <p class="footer-title">XE MITSUBISHI CŨ</p>
+            <ul>
+              <li>
+                <a href="">Hyundai Accent Cũ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bot-footer padding-section">
+        <div class="t-container custom-text-white">
+          @ Copyright 2021 <span class="custom-text-orange">kayauto.vn</span>
+        </div>
+      </div>
+    </footer>
   </body>
-  <script  type="text/javascript" src="./libs/jquey.js"></script>
-  <script  type="text/javascript" src="./libs/migrate.js"></script>
-  <script
-    type="text/javascript"
-    src="./libs/slick.js"
-  ></script>
+  <script type="text/javascript" src="./libs/jquey.js"></script>
+  <script type="text/javascript" src="./libs/migrate.js"></script>
+  <script type="text/javascript" src="./libs/slick.js"></script>
   <script type="text/javascript" src="./JS/slider.js"></script>
- 
 </html>

@@ -91,14 +91,11 @@ $color-orange: #ff6f24;
   left: 0;
   background-color: rgba(0, 0, 0, 0.493);
   color: white;
-  content: unset;
-  font-size: 30px;
-  padding: 15px 20px;
   border: unset;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   cursor: pointer;
-
+  padding: 10px 20px;
   @include Responsive(MD) {
     visibility: hidden;
   }
@@ -111,13 +108,11 @@ $color-orange: #ff6f24;
   right: 0;
   background-color: rgba(0, 0, 0, 0.493);
   color: white;
-  font-size: 30px;
-  padding: 15px 20px;
   border: unset;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   cursor: pointer;
-
+  padding: 10px 20px;
   @include Responsive(MD) {
     visibility: hidden;
   }
@@ -146,10 +141,10 @@ $color-orange: #ff6f24;
       margin-right: auto;
       left: 0;
       right: 0;
-      top: 81%;
+
       width: 0px;
       gap: 0 15px;
-
+      bottom: 140px;
       button {
         font-size: 0;
         width: 0.7rem;
@@ -209,14 +204,14 @@ $color-orange: #ff6f24;
       width: 75%;
 
       li {
-        margin-left: 1.2rem;
+        margin-left: 1.3rem;
 
         a {
           text-decoration: none;
           text-transform: uppercase;
           font-size: 0.75rem;
-          font-weight: 600;
-          letter-spacing: 1px;
+          font-weight: lighter;
+          letter-spacing: 1.1px;
           color: #fff;
           &:hover {
             color: $color-orange;
@@ -229,6 +224,9 @@ $color-orange: #ff6f24;
               border: 0;
             }
           }
+        }
+        @include Responsive(LG) {
+          margin-left: 1rem;
         }
       }
 
@@ -316,7 +314,9 @@ $color-orange: #ff6f24;
         padding: 0px;
         padding-left: 20px;
       }
-
+      option {
+        height: 10px;
+      }
       select {
         border: 0;
         color: black;
@@ -325,11 +325,11 @@ $color-orange: #ff6f24;
         margin-top: 0.5rem;
         display: block;
         font-size: 15px;
-
         &:focus {
           outline: none;
         }
       }
+
       label {
         color: #5191fa;
         font-weight: bolder;
@@ -349,6 +349,11 @@ $color-orange: #ff6f24;
         border-top-right-radius: 10px;
         border: 0;
       }
+    }
+
+    @include Responsive(XL) {
+      margin-top: -8rem;
+      padding-bottom: 6rem;
     }
 
     @include Responsive(LG) {
@@ -747,7 +752,7 @@ $color-orange: #ff6f24;
     @include Responsive(MD) {
       grid-template-columns: repeat(2, 1fr);
     }
-    @include Responsive(SM) {
+    @include Responsive(XS) {
       grid-template-columns: repeat(1, 1fr);
     }
     .news-item {
@@ -759,7 +764,7 @@ $color-orange: #ff6f24;
         border-left: 1px solid white;
         border-right: 1px solid white;
 
-        @include Responsive(SM) {
+        @include Responsive(XS) {
           border: 1px solid #fff;
         }
       }
@@ -838,6 +843,9 @@ $color-orange: #ff6f24;
     @include Responsive(MD) {
       padding: 0;
     }
+    &:active {
+      cursor: grab;
+    }
   }
   .gallery-item {
     display: flex;
@@ -847,6 +855,8 @@ $color-orange: #ff6f24;
       width: 280px;
       margin: 0 auto;
       height: 420px;
+      transition: 0.5s;
+
       @include Responsive(LG) {
         width: 370px;
         height: 100%;
@@ -866,7 +876,7 @@ $color-orange: #ff6f24;
       color: #fff;
       font-weight: bolder;
       font-size: 1.2rem;
-
+      transition: 0.5s;
       @include Responsive(LG) {
         padding: 10px 25px;
       }
@@ -887,13 +897,13 @@ $color-orange: #ff6f24;
   }
   .slick-center {
     img {
-      width: 300px;
+      width: 310px;
       transition: 0.5s;
       transition-delay: 0.3s;
       height: 480px;
     }
     p {
-      padding: 30px;
+      padding: 30px 30px;
       transition: 0.5s;
       transition-delay: 0.3s;
     }
@@ -908,6 +918,189 @@ $color-orange: #ff6f24;
     margin-right: 2rem;
     @include Responsive(LG) {
       margin-right: 0;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/footer-bg.jpg");
+  background-size: 100%;
+  .footer-title {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin-bottom: 29px;
+    &::after {
+      content: "";
+      display: block;
+      border-bottom: 3.5px solid $color-orange;
+      margin-top: 0.5rem;
+      position: relative;
+      width: 100px;
+    }
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 33.33333333% 25% 25% 16.66666667%;
+    padding: 60px 0px 50px;
+
+    @include Responsive(MD) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .content-item {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @include Responsive(MD) {
+        margin-top: 1rem;
+
+        &:first-child {
+          grid-column: 1 / -1;
+        }
+        &:nth-child(2) {
+          grid-column: 1 / -1;
+        }
+        img {
+          margin: 0 auto;
+          display: block;
+        }
+      }
+      @include Responsive(SM) {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      a {
+        text-decoration: none;
+      }
+      font-size: 0.9rem;
+
+      .footer-contact {
+        line-height: 1.5;
+        .contact-item {
+          margin-top: 0.8rem;
+        }
+      }
+
+      .footer-link {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        a {
+          line-height: 2.6;
+          font-weight: lighter;
+          &:hover {
+            color: $color-orange;
+          }
+        }
+        .link-router:not(:first-child) {
+          margin-left: 2rem;
+          @include Responsive(LG) {
+            margin-left: 0.8rem;
+          }
+        }
+      }
+      .tag {
+        line-height: 2.5;
+        @include Responsive(MD) {
+          line-height: unset;
+        }
+        a {
+          border: 1px solid white;
+          padding: 0px 10px;
+          font-size: 0.7rem;
+          display: inline-block;
+          &:hover {
+            background-color: $color-orange;
+            color: black;
+          }
+        }
+      }
+      .social {
+        display: flex;
+        li {
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            padding: 8px 0;
+            background-color: $color-orange;
+            border-radius: 50%;
+            width: 32px;
+            margin-left: 0.5rem;
+            @include Responsive(LG) {
+              margin-left: 0;
+            }
+            @include Responsive(MD) {
+              margin-left: 1rem;
+            }
+            @include Responsive(SM) {
+              margin-left: 0.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .car-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include Responsive(MD) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .car {
+      margin-top: 2rem;
+      ul {
+        li {
+          a {
+            width: 100%;
+            display: block;
+            line-height: 2.3;
+            color: white;
+            font-size: 1rem;
+            text-decoration: none;
+            &:hover {
+              color: $color-orange;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bot-footer {
+    border-top: 1px solid gray;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 3rem;
+  }
+}
+
+.about-bg {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(35, 36, 37, 0.8),
+      rgba(35, 36, 37, 0.8)
+    ),
+    url("../images/0.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include Responsive(MD) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .banner-nav {
+    position: relative;
+    padding: 0;
+    @include Responsive(MD) {
+      background-color: unset;
     }
   }
 }
