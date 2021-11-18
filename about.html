@@ -13,7 +13,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="banner about-bg">
         <div class="banner-nav">
           <i class="fas fa-bars toggle-icon" id="toggle" tabindex="1"></i>
@@ -121,20 +121,24 @@
           </div>
           <div class="number">
             <div class="number-item custom-text-white">
-              <span>5286</span>
+              <span class="value" akhi="5286">0</span>
               <div class="text"><p>Số phương tiện đã bán</p></div>
             </div>
             <div class="number-item custom-text-white">
-              <span>12268</span>
+              <span class="value" akhi="12268">0</span>
               <div class="text"><p>Tổng số khách hàng</p></div>
             </div>
             <div class="number-item custom-text-white">
-              <span>95</span>
-              <div class="text"><p>% Khách hàng hài lòng</p></div>
+              <span class="value" akhi="95">0</span>
+              <div class="text">
+                <p>% Khách hàng hài lòng</p>
+              </div>
             </div>
             <div class="number-item custom-text-white">
-              <span>60</span>
-              <div class="text"><p>Phương tiện hiện có</p></div>
+              <span class="value" akhi="60">0</span>
+              <div class="text">
+                <p>Phương tiện hiện có</p>
+              </div>
             </div>
           </div>
         </div>
@@ -254,6 +258,45 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="cta">
+        <div class="zalo">
+          <a href=""><img src="./images/zalo.png" alt="" /></a>
+        </div>
+        <a href="sds" class="phone">
+          <i class="fas fa-phone"></i>
+          <div class="phone-text">
+            <span>Hotline:</span>
+            <p>094 108 08 88</p>
+          </div>
+        </a>
+        <div class="right-menu">
+          <ul>
+            <li>
+              <a href=""><img src="./images/search.png" alt="" /></a>
+              <span>So sánh xe</span>
+            </li>
+            <li>
+              <a href=""><img src="./images/dolar.png" alt="" /></a>
+              <span>Đăng đý bán xe</span>
+            </li>
+            <li>
+              <a href=""><img src="./images/search.png" alt="" /></a>
+              <span>Đăng ký mua xe</span>
+            </li>
+            <li>
+              <a href=""><img src="./images/dolar.png" alt="" /></a>
+              <span>Thủ tục trả góp</span>
+            </li>
+            <li>
+              <a href=""><img src="./images/i.png" alt="" /></a>
+              <span>Đăng ký dịch vụ</span>
+            </li>
+          </ul>
+        </div>
+        <a class="scroll-top"
+          ><i class="fa fa-arrow-up" aria-hidden="true"></i
+        ></a>
       </div>
     </main>
     <footer class="">
@@ -413,5 +456,5 @@
   <script type="text/javascript" src="./libs/jquey.js"></script>
   <script type="text/javascript" src="./libs/migrate.js"></script>
   <script type="text/javascript" src="./libs/slick.js"></script>
-  <script type="text/javascript" src="./myscript/slider.js"></script>
+  <script type="text/javascript" src="./js/slider.js"></script>
 </html>

@@ -14,7 +14,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="banner">
         <div class="banner-nav">
           <i class="fas fa-bars toggle-icon" id="toggle" tabindex="1"></i>
@@ -48,13 +48,7 @@
               <a href="">Tin tức</a>
             </li>
             <li>
-              <a
-                href=""
-                class="custom-text-orange active"
-                style="color: #ff6f24"
-                >Phong thủy xe
-                <p class="active"></p>
-              </a>
+              <a href="" class="">Phong thủy xe </a>
             </li>
             <li>
               <a href="">Liên hệ</a>
@@ -122,7 +116,7 @@
                 thích.
               </p>
               <a href="">Xem chi tiết</a>
-              <div class="box-img">
+              <div class="box-img" id="left">
                 <img src="./images/red-car.png" alt="" />
               </div>
             </div>
@@ -138,19 +132,21 @@
                 thích.
               </p>
               <a href="">Xem chi tiết</a>
-              <div class="box-img">
-                <img src="./images/blue-car.png" alt="" />
+              <div class="box-img" id="right">
+                <img src="./images/blue-car.png" alt="" class="" />
               </div>
             </div>
           </div>
         </div>
         <div class="section-product">
-          <p class="section-title">CÁC DÒNG XE TIÊU BIỂU</p>
+          <div class="section-title">CÁC DÒNG XE TIÊU BIỂU</div>
           <div class="section-product-list padding-section">
             <div class="product-item">
-              <img src="./images/product.jpg" alt="" />
+              <a href="">
+                <img src="./images/product.jpg" alt="" />
+              </a>
               <div class="body">
-                <b>Chevrolet Trailblazer 2018 Tự động máy dầu</b>
+                <a href="">Chevrolet Trailblazer 2018 Tự động máy dầu</a>
                 <p>
                   <b class="custom-text-orange">Giảm còn 660 triệu</b> |
                   <small>Trả trước: 264 Triệu</small>
@@ -173,9 +169,9 @@
               </div>
             </div>
             <div class="product-item">
-              <img src="./images/product2.jpg" alt="" />
+              <a href=""><img src="./images/product2.jpg" alt="" /></a>
               <div class="body">
-                <b>Chevrolet Trailblazer 2018 Tự động máy dầu</b>
+                <a href="">Chevrolet Trailblazer 2018 Tự động máy dầu</a>
                 <p>
                   <b class="custom-text-orange">Giảm còn 660 triệu</b> |
                   <small>Trả trước: 264 Triệu</small>
@@ -198,9 +194,9 @@
               </div>
             </div>
             <div class="product-item">
-              <img src="./images/product3.jpg" alt="" />
+              <a href=""><img src="./images/product3.jpg" alt="" /></a>
               <div class="body">
-                <b>Chevrolet Trailblazer 2018 Tự động máy dầu</b>
+                <a href="">Chevrolet Trailblazer 2018 Tự động máy dầu</a>
                 <p>
                   <b class="custom-text-orange">Giảm còn 660 triệu</b> |
                   <small>Trả trước: 264 Triệu</small>
@@ -223,9 +219,9 @@
               </div>
             </div>
             <div class="product-item">
-              <img src="./images/product4.jpg" alt="" />
+              <a href=""><img src="./images/product4.jpg" alt="" /></a>
               <div class="body">
-                <b>Chevrolet Trailblazer 2018 Tự động máy dầu</b>
+                <a href="">Chevrolet Trailblazer 2018 Tự động máy dầu</a>
                 <p>
                   <b class="custom-text-orange">Giảm còn 660 triệu</b> |
                   <small>Trả trước: 264 Triệu</small>
@@ -253,7 +249,8 @@
           </div>
         </div>
         <div class="section-service">
-          <p class="section-title">Các loại hình dịch vụ</p>
+          <div class="section-title">Các loại hình dịch vụ</div>
+          <span class="counter-info"></span>
           <div class="section-service-slide padding-section">
             <div class="slide-contain">
               <div class="section-service-box">
@@ -306,37 +303,43 @@
       <div class="section-news">
         <div class="t-container">
           <div class="padding-content">
-            <p class="section-title">Tin tức nổi bật</p>
+            <div class="section-title">Tin tức nổi bật</div>
             <div class="padding-section news-box">
               <div class="news-item">
-                <img src="./images/blog-4.png" alt="" />
-                <div class="news-info">
-                  <p class="custom-text-orange">Kinh ngiệm</p>
-                  <a href="">
-                    9 kinh nghiệm (cần có) để biết cách mua xe ô tô cũ cực hiệu
-                    quả.
-                  </a>
-                </div>
+                <a href="">
+                  <img src="./images/blog-4.png" alt="" />
+                  <div class="news-info">
+                    <p class="custom-text-orange">Kinh ngiệm</p>
+                    <a href="">
+                      9 kinh nghiệm (cần có) để biết cách mua xe ô tô cũ cực
+                      hiệu quả.
+                    </a>
+                  </div>
+                </a>
               </div>
               <div class="news-item">
-                <img src="./images/blog-3.png" alt="" />
-                <div class="news-info">
-                  <p class="custom-text-orange">Kinh ngiệm</p>
-                  <a href="">
-                    9 kinh nghiệm (cần có) để biết cách mua xe ô tô cũ cực hiệu
-                    quả.
-                  </a>
-                </div>
+                <a href="">
+                  <img src="./images/blog-3.png" alt="" />
+                  <div class="news-info">
+                    <p class="custom-text-orange">Kinh ngiệm</p>
+                    <a href="">
+                      9 kinh nghiệm (cần có) để biết cách mua xe ô tô cũ cực
+                      hiệu quả.
+                    </a>
+                  </div>
+                </a>
               </div>
               <div class="news-item">
-                <img src="./images/blog2.jpg" alt="" />
-                <div class="news-info">
-                  <p class="custom-text-orange">Kinh ngiệm</p>
-                  <a href="">
-                    9 kinh nghiệm (cần có) để biết cách mua xe ô tô cũ cực hiệu
-                    quả.
-                  </a>
-                </div>
+                <a href="">
+                  <img src="./images/blog2.jpg" alt="" />
+                  <div class="news-info">
+                    <p class="custom-text-orange">Kinh ngiệm</p>
+                    <a href="">
+                      9 kinh nghiệm (cần có) để biết cách mua xe ô tô cũ cực
+                      hiệu quả.
+                    </a>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -344,26 +347,65 @@
       </div>
       <div class="t-container">
         <div class="section-gallery padding-section">
-          <p class="section-title">Thư viện ảnh</p>
+          <div class="section-title">Thư viện ảnh</div>
           <div class="gallery-slide">
-            <div class="gallery-item">
+            <a class="gallery-item" href="">
               <img src="./images/gallery1.png" alt="" />
               <p>Xưởng dịch vụ</p>
-            </div>
-            <div class="gallery-item">
+            </a>
+            <a class="gallery-item" href="">
               <img src="./images/gallery2.jpg" alt="" />
               <p>Xưởng dịch vụ</p>
-            </div>
-            <div class="gallery-item">
+            </a>
+            <a class="gallery-item" href="">
               <img src="./images/gallery3.jpg" alt="" />
               <p>Xưởng dịch vụ</p>
-            </div>
-            <div class="gallery-item">
+            </a>
+            <a class="gallery-item" href="">
               <img src="./images/gallery4.png" alt="" />
               <p>Xưởng dịch vụ</p>
-            </div>
+            </a>
           </div>
         </div>
+      </div>
+      <div class="cta">
+        <div class="zalo">
+          <a href=""><img src="./images/zalo.png" alt="" /></a>
+        </div>
+        <a href="sds" class="phone">
+          <i class="fas fa-phone"></i>
+          <div class="phone-text">
+            <span>Hotline:</span>
+            <p>094 108 08 88</p>
+          </div>
+        </a>
+        <div class="right-menu">
+          <ul>
+            <li>
+              <a href=""><img src="./images/search.png" alt="" /></a>
+              <span>So sánh xe</span>
+            </li>
+            <li>
+              <a href=""><img src="./images/dolar.png" alt="" /></a>
+              <span>Đăng đý bán xe</span>
+            </li>
+            <li>
+              <a href=""><img src="./images/search.png" alt="" /></a>
+              <span>Đăng ký mua xe</span>
+            </li>
+            <li>
+              <a href=""><img src="./images/dolar.png" alt="" /></a>
+              <span>Thủ tục trả góp</span>
+            </li>
+            <li>
+              <a href=""><img src="./images/i.png" alt="" /></a>
+              <span>Đăng ký dịch vụ</span>
+            </li>
+          </ul>
+        </div>
+        <a class="scroll-top"
+          ><i class="fa fa-arrow-up" aria-hidden="true"></i
+        ></a>
       </div>
     </main>
     <footer class="">
@@ -523,5 +565,5 @@
   <script type="text/javascript" src="./libs/jquey.js"></script>
   <script type="text/javascript" src="./libs/migrate.js"></script>
   <script type="text/javascript" src="./libs/slick.js"></script>
-  <script type="text/javascript" src="./myscript/slider.js"></script>
+  <script type="text/javascript" src="./js/slider.js"></script>
 </html>
